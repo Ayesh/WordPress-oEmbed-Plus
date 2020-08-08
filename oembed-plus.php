@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:  oEmbed for Facebook and Instagram
+ * Plugin Name:  oEmbed Plus
  * Plugin URI:   https://php.watch/articles/wordpress-facebook-instagram-oembed
  * Version:      1.0
  * Description:  Adds support for embedding Facebook and Instagram posts in the block editor.
@@ -10,8 +10,8 @@
  * Requires PHP: 7.3
  */
 
-use Ayesh\OembedFacebook\Embed;
-use Ayesh\OembedFacebook\Settings;
+use Ayesh\OembedPlus\Embed;
+use Ayesh\OembedPlus\Settings;
 
 add_filter('oembed_providers', static function(array $providers): array{
 	require_once __DIR__ . '/src/Embed.php';

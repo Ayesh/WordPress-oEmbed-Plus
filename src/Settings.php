@@ -1,6 +1,6 @@
 <?php
 
-namespace Ayesh\OembedFacebook;
+namespace Ayesh\OembedPlus;
 
 class Settings {
 	public static function runHook(): void {

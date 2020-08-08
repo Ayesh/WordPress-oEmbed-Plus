@@ -1,4 +1,4 @@
-=== oEmbed for Facebook and Instagram ===
+=== oEmbed Plus ===
 Contributors: ayeshrajans
 Donate link:
 Tags: embed, facebook, instagram, oembed

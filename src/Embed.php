@@ -1,8 +1,6 @@
 <?php
 
-
-namespace Ayesh\OembedFacebook;
-
+namespace Ayesh\OembedPlus;
 
 class Embed {
 	private $app_id;
