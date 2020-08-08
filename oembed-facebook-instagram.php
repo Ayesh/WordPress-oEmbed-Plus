@@ -1,11 +1,13 @@
 <?php
 /**
- * Plugin Name: oEmbed for Facebook and Instagram
- * Version:     1.0
- * Description: Adds support for embedding Facebook and Instagram posts in the block editor.
- * Licence:     GPLv2 or later
- * Author:      Ayesh Karunaratne
- * Author URI:  https://ayesh.me/open-source
+ * Plugin Name:  oEmbed for Facebook and Instagram
+ * Plugin URI:   https://php.watch/articles/wordpress-facebook-instagram-oembed
+ * Version:      1.0
+ * Description:  Adds support for embedding Facebook and Instagram posts in the block editor.
+ * Licence:      GPLv2 or later
+ * Author:       Ayesh Karunaratne
+ * Author URI:   https://ayesh.me/open-source
+ * Requires PHP: 7.3
  */
 
 use Ayesh\OembedFacebook\Embed;
