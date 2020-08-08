@@ -26,6 +26,7 @@ Detailed setup instructions are available in https://php.watch/articles/wordpres
 = WordPress already supports this feature in core =
 
 Yes, but only in versions prior to 5.5.1, and it uses a legacy API that will stops on October 24, 2020.
+See https://core.trac.wordpress.org/ticket/50861 for more information.
 
 = This version requires PHP 7.3 =
 
@@ -40,5 +41,6 @@ Probably not. This plugin is intended to bring back functionality the WordPress 
 Go to Settings -> Writing, and you will see a section to enter Facebook App ID and Secret.
 
 
-== Changelog ==
+== Screenshots ==
 
+== Changelog ==
