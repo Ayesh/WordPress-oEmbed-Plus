@@ -2,8 +2,8 @@
 Contributors: ayeshrajans
 Donate link:
 Tags: embed, facebook, instagram, oembed
-Requires at least: 4.0
-Tested up to: 4.8
+Requires at least: 5.4
+Tested up to: 5.5
 Stable tag: 1.0
 Requires PHP: 7.3
 License: GPLv2 or later
@@ -19,14 +19,14 @@ Prior to WordPress 5.5.1, WordPress had support to embed Instagram and Facebook 
 
 Note that you will need to register a Facebook developer and create an app to get API credentials that this plugin uses.
 
-Detailed setup instructions are available in https://php.watch/articles/wordpress-facebook-instagram-oembed
+Detailed setup instructions are available in [PHP.Watch](https://php.watch/articles/wordpress-facebook-instagram-oembed)
 
 == Frequently Asked Questions ==
 
 = WordPress already supports this feature in core =
 
 Yes, but only in versions prior to 5.5.1, and it uses a legacy API that will stops on October 24, 2020.
-See https://core.trac.wordpress.org/ticket/50861 for more information.
+See [#50861](https://core.trac.wordpress.org/ticket/50861) for more information.
 
 = This version requires PHP 7.3 =
 
@@ -43,4 +43,12 @@ Go to Settings -> Writing, and you will see a section to enter Facebook App ID a
 
 == Screenshots ==
 
+1. Plugin configuration (Admin → Settings → Writing)
+2. Registering a new Facebook App
+3. Example embedded content
+
 == Changelog ==
+
+**1.0**
+
+ - Initial release.
