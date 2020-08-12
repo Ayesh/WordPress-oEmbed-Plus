@@ -30,7 +30,6 @@ class Embed {
 		$this->app_id = $app_id;
 		$this->app_secret = $app_secret;
 		if (!empty($app_id) && !empty($app_secret)) {
-			file_put_contents('fmod.txt', __LINE__);
 			$this->valid_credentials = true;
 		}
 	}

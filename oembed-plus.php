@@ -28,7 +28,7 @@ add_filter('oembed_fetch_url', static function($provider_url): string{
 	return $embed->processProviderUrls($provider_url);
 });
 
-add_action( 'admin_init', static function () {
+add_action('admin_init', static function(): void {
 	require_once __DIR__ . '/src/Settings.php';
 	Settings::runHook();
 });
