@@ -19,7 +19,10 @@ add_filter('oembed_providers', static function(array $providers): array{
 });
 
 add_filter('oembed_fetch_url', static function($provider_url): string{
-	if (strpos($provider_url, 'https://graph.facebook.com/v8.0/oembed_') === false) {
+	if (
+	    strpos($provider_url, 'https://graph.facebook.com/v8.0/oembed_') === false
+        || strpos($provider_url, 'https://graph.facebook.com/v8.0/instagram_oembed') !== false
+    ) {
 		return $provider_url;
 	}
 
