@@ -61,11 +61,11 @@ class Settings {
 	}
 
 	public function fieldAppIdCallback(): void {
-		echo '<input name="oembed_facebook_app_id" id="oembed_facebook_app_id" type="number" value="'.get_option('oembed_facebook_app_id').'" />';
+		echo '<input name="oembed_facebook_app_id" id="oembed_facebook_app_id" type="number" value="'.esc_attr(get_option('oembed_facebook_app_id')).'" />';
 	}
 
 	public function fieldAppSecretCallback(): void {
-		echo '<input name="oembed_facebook_app_secret" pattern="[A-z0-9]{32}" title="32 characters of a-z and 0-9 app secret" autocomplete="off" id="oembed_facebook_app_secret" type="text" value="'.get_option('oembed_facebook_app_secret').'" />';
+		echo '<input name="oembed_facebook_app_secret" pattern="[A-z0-9]{32}" title="32 characters of a-z and 0-9 app secret" autocomplete="off" id="oembed_facebook_app_secret" type="text" value="'.esc_attr(get_option('oembed_facebook_app_secret')).'" />';
 	}
 
 	public static function deleteSettings(): void {
