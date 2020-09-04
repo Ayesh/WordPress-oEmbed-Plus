@@ -41,7 +41,7 @@ class Settings {
 			'type' => 'integer',
 			'description' => 'The App ID for the Facebook App',
 			'sanitize_callback' => static function(string $string): string{
-				return filter_var($string, FILTER_SANITIZE_NUMBER_INT);
+				return (int) $string;
 			}
 		]);
 
