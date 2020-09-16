@@ -4,7 +4,7 @@ Donate link:
 Tags: embed, facebook, instagram, oembed
 Requires at least: 5.4
 Tested up to: 5.5
-Stable tag: 1.0
+Stable tag: 1.1
 Requires PHP: 7.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -52,3 +52,8 @@ Go to Settings -> Writing, and you will see a section to enter Facebook App ID a
 **1.0**
 
  - Initial release.
+
+**1.1**
+
+ - Fixes a bug in Instagram oEmbed URL endpoint check.
+ - Minor improvements in the Facebook App ID field validations.
