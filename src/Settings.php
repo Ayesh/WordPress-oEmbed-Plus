@@ -61,7 +61,7 @@ class Settings {
 	}
 
 	public function fieldAppIdCallback(): void {
-		echo '<input name="oembed_facebook_app_id" id="oembed_facebook_app_id" type="number" value="'.esc_attr(get_option('oembed_facebook_app_id')).'" />';
+		echo '<input name="oembed_facebook_app_id" title="Facebook App ID" min="10000000000" max="9999999999999999" title="Numeric App ID" inputmode="numeric" id="oembed_facebook_app_id" type="number" value="'.esc_attr(get_option('oembed_facebook_app_id')).'" />';
 	}
 
 	public function fieldAppSecretCallback(): void {
