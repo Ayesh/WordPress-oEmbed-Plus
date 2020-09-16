@@ -56,8 +56,8 @@ class Settings {
 
 	public function sectionCallback(): void {
 		echo '<p>Facebook developer app credentials are required to embed Facebook and Instagram content in the block editor.';
-		echo 'You need to <a href="https://developers.facebook.com/apps/" target="_blank">register a Facebook app</a>, enable <a href="https://developers.facebook.com/docs/plugins/oembed#oembed-product" target="_blank">oEmbed</a>, and add its App ID and secret in the fields below.</p>';
-		echo '<p>A detailed guide is available at <a href="https://php.watch/articles/wordpress-facebook-instagram-oembed">PHP.Watch</a>.</p>';
+		echo 'You need to <a href="https://developers.facebook.com/apps/" target="_blank" rel="noopener noreferrer">register a Facebook app</a>, enable <a href="https://developers.facebook.com/docs/plugins/oembed#oembed-product">oEmbed</a>, and add its App ID and secret in the fields below.</p>';
+		echo '<p>A detailed guide is available at <a target="_blank" rel="noopener noreferrer" href="https://php.watch/articles/wordpress-facebook-instagram-oembed">oEmbed Plus guide at PHP.Watch</a>.</p>';
 	}
 
 	public function fieldAppIdCallback(): void {

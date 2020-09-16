@@ -13,13 +13,13 @@ Adds support for embedding Facebook and Instagram posts in the block editor.
 
 == Description ==
 
-This plugin implements the new Facebook and Instagram oEmbed APIs.
+This plugin implements the new Facebook and Instagram oEmbed APIs, restoring the Facebook and Instagram embeds in block editor.
 
 Prior to WordPress 5.5.1, WordPress had support to embed Instagram and Facebook photos, videos, notes, quizes, etc in posts created with the block editor. However, Facebook removes this legacy API in October 2020, and this plugin implements the new APIs to bring back support for Facebook and Instagram content embedding.
 
 Note that you will need to register a Facebook developer and create an app to get API credentials that this plugin uses.
 
-Detailed setup instructions are available in [PHP.Watch](https://php.watch/articles/wordpress-facebook-instagram-oembed)
+Detailed setup instructions are available in [oEmbed Plus guide at PHP.Watch](https://php.watch/articles/wordpress-facebook-instagram-oembed)
 
 == Frequently Asked Questions ==
 
