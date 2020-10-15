@@ -57,3 +57,7 @@ Go to Settings -> Writing, and you will see a section to enter Facebook App ID a
 
  - Fixes a bug in Instagram oEmbed URL endpoint check.
  - Minor improvements in the Facebook App ID field validations.
+
+**1.2**
+
+ - Allow setting Facebook App ID and secret with a constant in `wp-config.php` file.

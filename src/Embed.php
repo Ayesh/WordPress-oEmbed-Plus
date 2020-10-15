@@ -18,6 +18,7 @@ class Embed {
 		'#https?://www\.facebook\.com/notes/.*#i'           => [ 'https://graph.facebook.com/v8.0/oembed_post', true ],
 		'#https?://www\.facebook\.com/.*/videos/.*#i'       => [ 'https://graph.facebook.com/v8.0/oembed_video', true ],
 		'#https?://www\.facebook\.com/video\.php.*#i'       => [ 'https://graph.facebook.com/v8.0/oembed_video', true ],
+		'#https?://www\.facebook\.com/watch/?\?v=\d+#i'     => [ 'https://graph.facebook.com/v8.0/oembed_video', true ],
 
 		'#https?://(www\.)?instagr(\.am|am\.com)/(p|tv)/.*#i' => [ 'https://graph.facebook.com/v8.0/instagram_oembed', true ],
 	];
