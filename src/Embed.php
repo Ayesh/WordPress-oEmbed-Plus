@@ -41,5 +41,6 @@ class Embed {
 		}
 
 		return $provider_url . '&access_token=' . urlencode($this->app_id . '|' . $this->app_secret);
+
 	}
 }
