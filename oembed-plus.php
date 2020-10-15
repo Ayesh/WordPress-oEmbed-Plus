@@ -24,7 +24,17 @@ add_filter('oembed_fetch_url', static function($provider_url): string{
     }
 
 	require_once __DIR__ . '/src/Embed.php';
-	$embed = new Embed(get_option('oembed_facebook_app_id', null), get_option('oembed_facebook_app_secret', null));
+
+	if (defined('OEMBED_PLUS_FACEBOOK_APP_ID') && defined('OEMBED_PLUS_FACEBOOK_SECRET')) {
+        $embed = new Embed(OEMBED_PLUS_FACEBOOK_APP_ID, OEMBED_PLUS_FACEBOOK_SECRET);
+    }
+	elseif (($app_id = get_option('oembed_facebook_app_id', null)) && ($app_secret = get_option('oembed_facebook_app_secret', null))) {
+        $embed = new Embed($app_id, $app_secret);
+    }
+	else {
+	    return $provider_url;
+    }
+
 	return $embed->processProviderUrls($provider_url);
 });
 

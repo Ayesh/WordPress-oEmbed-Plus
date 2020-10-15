@@ -40,6 +40,14 @@ Probably not. This plugin is intended to bring back functionality the WordPress 
 
 Go to Settings -> Writing, and you will see a section to enter Facebook App ID and Secret.
 
+Alternately, you can set the Facebook App ID and secret in the `wp-config.php` file. If they are set in the `wp-config.php` file, the settings form in Settings -> Writing section will be disabled.
+To enter the Facebook App ID and secret, update the `wp-config.php` file in root of your WordPress installation, and append the following lines:
+
+`
+define('OEMBED_PLUS_FACEBOOK_APP_ID', '<App ID Here>');
+define('OEMBED_PLUS_FACEBOOK_SECRET', '<Secret Here>');
+`
+
 
 == Screenshots ==
 
@@ -60,4 +68,5 @@ Go to Settings -> Writing, and you will see a section to enter Facebook App ID a
 
 **1.2**
 
- - Allow setting Facebook App ID and secret with a constant in `wp-config.php` file.
+ - Add `https://www.facebook.com/watch/?v=<ID>` URL pattern to supported video URL patterns.
+ - Allow setting Facebook App ID and secret with a [constant in `wp-config.php` file](https://php.watch/articles/wordpress-facebook-instagram-oembed#wp-config).
