@@ -2,8 +2,8 @@
 Contributors: ayeshrajans
 Tags: embed, facebook, instagram, oembed
 Requires at least: 5.4
-Tested up to: 5.5
-Stable tag: 1.2
+Tested up to: 5.6
+Stable tag: 1.4
 Requires PHP: 7.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +14,7 @@ Adds support for embedding Facebook and Instagram posts in the block editor.
 
 This plugin implements the new Facebook and Instagram oEmbed APIs, restoring the Facebook and Instagram embeds in block editor.
 
-Prior to WordPress 5.5.1, WordPress had support to embed Instagram and Facebook photos, videos, notes, quizes, etc in posts created with the block editor. However, Facebook removes this legacy API in October 2020, and this plugin implements the new APIs to bring back support for Facebook and Instagram content embedding.
+Prior to WordPress 5.5.1, WordPress had support to embed Instagram and Facebook photos, videos, notes, quizes, etc in posts created with the block editor. However, Facebook removed this legacy API in October 2020, and this plugin implements the new APIs to bring back support for Facebook and Instagram content embedding.
 
 Note that you will need to register a Facebook developer and create an app to get API credentials that this plugin uses.
 
@@ -24,12 +24,12 @@ Detailed setup instructions are available in [oEmbed Plus guide at PHP.Watch](ht
 
 = WordPress already supports this feature in core =
 
-Yes, but only in versions prior to 5.5.1, and it uses a legacy API that will stops on October 24, 2020.
+Yes, but only in versions prior to 5.5.1, and it used a legacy API that stopped working after October 24, 2020.
 See [#50861](https://core.trac.wordpress.org/ticket/50861) for more information.
 
-= This version requires PHP 7.3 =
+= This version requires PHP 7.1 =
 
-Yes, and that is intentional. You really should be using a modern PHP version.
+Yes, this plugin requires PHP 7.1 or later. That is by design.
 
 = Can you add support for service X? =
 
@@ -47,6 +47,15 @@ define('OEMBED_PLUS_FACEBOOK_APP_ID', '<App ID Here>');
 define('OEMBED_PLUS_FACEBOOK_SECRET', '<Secret Here>');
 `
 
+= Optionally hide the admin UI=
+
+It is possible to completely hide the administration form added by this plugin in Admin → Settings → Writing page. This can be helpful if you set the configuration values in the `wp-config.php` file, and keep the administration UI minimal.
+
+To hide the administration form, update the `wp-config.php` file with an extra line:
+
+`
+define('OEMBED_PLUS_HIDE_ADMIN_UI', true);
+`
 
 == Screenshots ==
 
@@ -69,3 +78,9 @@ define('OEMBED_PLUS_FACEBOOK_SECRET', '<Secret Here>');
 
  - Add `https://www.facebook.com/watch/?v=<ID>` URL pattern to supported video URL patterns.
  - Allow setting Facebook App ID and secret with a [constant in `wp-config.php` file](https://php.watch/articles/wordpress-facebook-instagram-oembed#wp-config).
+
+**1.4**
+
+ - Add an option to completely hide the admin UI by setting `OEMBED_PLUS_HIDE_ADMIN_UI` PHP constant in `wp-config.php` file.
+ - Code styling clean-up.
+ - The minimum required PHP version is changed to 7.1 from PHP 7.3. It's strongly suggested to use more recent and supported PHP versions nonetheless.
