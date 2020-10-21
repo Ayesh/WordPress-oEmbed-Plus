@@ -7,7 +7,7 @@
  * Licence:      GPLv2 or later
  * Author:       Ayesh Karunaratne
  * Author URI:   https://ayesh.me/open-source
- * Requires PHP: 7.3
+ * Requires PHP: 7.1
  */
 
 use Ayesh\OembedPlus\Embed;
