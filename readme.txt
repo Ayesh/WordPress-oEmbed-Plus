@@ -3,20 +3,20 @@ Contributors: ayeshrajans
 Tags: embed, facebook, instagram, oembed
 Requires at least: 5.4
 Tested up to: 5.6
-Stable tag: 1.4
+Stable tag: 1.5
 Requires PHP: 7.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Adds support for embedding Facebook and Instagram posts in the block editor.
+Adds support for embedding Facebook and Instagram posts in Block Editor (Gutenberg) and Classic Editor.
 
 == Description ==
 
-This plugin implements the new Facebook and Instagram oEmbed APIs, restoring the Facebook and Instagram embeds in block editor.
+Adds support for embedding Facebook and Instagram posts in Block Editor (Gutenberg) and Classic Editor. This feature was removed in WordPress core due to deprecation of legacy APIs WordPress core used.
 
-Prior to WordPress 5.5.1, WordPress had support to embed Instagram and Facebook photos, videos, notes, quizes, etc in posts created with the block editor. However, Facebook removed this legacy API in October 2020, and this plugin implements the new APIs to bring back support for Facebook and Instagram content embedding.
+Prior to WordPress 5.5.1, WordPress had support to embed Instagram and Facebook photos, videos, notes, quizes, etc in posts created with Block Editor and Classic Editor. However, Facebook removed this legacy API in October 2020, and this plugin implements the new APIs to bring back support for Facebook and Instagram content embedding.
 
-Note that you will need to register a Facebook developer and create an app to get API credentials that this plugin uses.
+Note that you will need to register a Facebook developer account and create an app to get API credentials that this plugin uses. There is no coding necessary, but an API key needs to be created and set for the plugin.
 
 Detailed setup instructions are available in [oEmbed Plus guide at PHP.Watch](https://php.watch/articles/wordpress-facebook-instagram-oembed)
 
@@ -84,3 +84,7 @@ define('OEMBED_PLUS_HIDE_ADMIN_UI', true);
  - Add an option to completely hide the admin UI by setting `OEMBED_PLUS_HIDE_ADMIN_UI` PHP constant in `wp-config.php` file.
  - Code styling clean-up.
  - The minimum required PHP version is changed to 7.1 from PHP 7.3. It's strongly suggested to use more recent and supported PHP versions nonetheless.
+
+**1.5**
+
+ - Updates to the readme file to make it more clear that this plugin supports both Classic Editor and Block Editor.
