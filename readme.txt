@@ -1,7 +1,7 @@
 === oEmbed Plus ===
 Contributors: ayeshrajans
 Tags: embed, facebook, instagram, oembed
-Requires at least: 5.4
+Requires at least: 4.9
 Tested up to: 5.6
 Stable tag: 1.5
 Requires PHP: 7.1
