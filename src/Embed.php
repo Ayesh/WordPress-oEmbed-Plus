@@ -17,6 +17,7 @@ class Embed {
 		'#https?://www\.facebook\.com/watch/?\?v=\d+#i' => ['https://graph.facebook.com/v8.0/oembed_video', true],
 
 		'#https?://(www\.)?instagr(\.am|am\.com)/(p|tv)/.*#i' => ['https://graph.facebook.com/v8.0/instagram_oembed', true],
+		'#https?://(www\.)?instagr(\.am|am\.com)/p/.*#i' => ['https://graph.facebook.com/v8.0/instagram_oembed', true],
 	];
 
 	private $app_id;
