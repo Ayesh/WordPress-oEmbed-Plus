@@ -1,9 +1,9 @@
 === oEmbed Plus ===
-Contributors: ayeshrajans
+Contributors: ayeshrajans, scorpionmit01   
 Tags: embed, facebook, instagram, oembed
 Requires at least: 4.9
-Tested up to: 5.6
-Stable tag: 1.6
+Tested up to: 6.1.1
+Stable tag: 1.8
 Requires PHP: 7.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
