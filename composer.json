@@ -1,0 +1,14 @@
+{
+    "name": "ayesh/word-press-o-embed-plus",
+    "keywords": ["wordpress", "plugin"],
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Ayesh",
+            "email": "ayesh@aye.sh"
+        }
+    ],
+    "require": {
+        "php": "^7.1|^8.0"
+    }
+}
