@@ -2,8 +2,8 @@
 Contributors: ayeshrajans
 Tags: embed, facebook, instagram, oembed
 Requires at least: 4.9
-Tested up to: 5.6
-Stable tag: 1.6
+Tested up to: 6.1
+Stable tag: 1.7
 Requires PHP: 7.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -88,7 +88,13 @@ define('OEMBED_PLUS_HIDE_ADMIN_UI', true);
 **1.5**
 
  - Updates to the readme file to make it more clear that this plugin supports both Classic Editor and Block Editor.
- 
+
 **1.6**
 
  - Updated the plugin minimum WordPress core requirement to 4.9, along with relevant compatibility changes. The plugin works on all WordPress versions from 4.9 through 5.6 and up.
+
+ **1.7**
+ - Test with WordPress 6.1.
+ - Use a newer version of the Graph API.
+ - Added Instagram Reels support.
+ - Added fb.watch support.
