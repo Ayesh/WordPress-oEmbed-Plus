@@ -2,6 +2,9 @@
 
 namespace Ayesh\OembedPlus;
 
+use function array_merge;
+use function urlencode;
+
 class Embed {
 	private static $providerPatterns = [
 		'#https?://www\.facebook\.com/.*/posts/.*#i' => ['https://graph.facebook.com/v8.0/oembed_post', true],

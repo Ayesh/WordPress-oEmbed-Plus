@@ -2,6 +2,10 @@
 
 namespace Ayesh\OembedPlus;
 
+use function defined;
+use function preg_replace;
+use function strtolower;
+
 class Settings {
     private $wpConfigSettings;
 
