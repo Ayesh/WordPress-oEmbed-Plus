@@ -3,7 +3,7 @@ Contributors: ayeshrajans
 Tags: embed, facebook, instagram, oembed
 Requires at least: 4.9
 Tested up to: 5.6
-Stable tag: 1.6
+Stable tag: 1.7
 Requires PHP: 7.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -92,3 +92,9 @@ define('OEMBED_PLUS_HIDE_ADMIN_UI', true);
 **1.6**
 
  - Updated the plugin minimum WordPress core requirement to 4.9, along with relevant compatibility changes. The plugin works on all WordPress versions from 4.9 through 5.6 and up.
+
+**1.7**
+
+ - Maintenance of this plugin was on a hiatus, but with this version, it is back to active development.
+ - Fixes a few bugs that caused failed embeds.
+ - Updated instructions to match changes in Facebook Developer program.
